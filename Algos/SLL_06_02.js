@@ -41,8 +41,6 @@ class SLList {
     }
 
 
-
-
     // Write a method that prints the contents of a Singly Linked List.
     printList() {
         // Let's start a runner at the beginning of the singly linked list itself
@@ -64,18 +62,7 @@ class SLList {
         // Once we've finished moving through the entire list, we want to print the string
         console.log(string);
     }
-    addToFront(value){
-        var newFront = new SLNode(value);
-        newFront.next = this.head;
-        this.head = newFront;
-        return this;
-        
-    }
-    removeFromFront(){
-        this.head = this.head.next;
-        return this;
-    }
-}
+  
 
 
 var myList = new SLList();
@@ -83,12 +70,6 @@ var myList = new SLList();
 myList.head = new SLNode(5);
 myList.head.next = new SLNode(6);
 myList.head.next.next = new SLNode(7);
-myList.addToBack(99).addToBack(12);
-console.log(myList.head)
-myList.addToFront(25).addToFront(0);
-myList.addToFront(333);
-console.log(myList.head)
-myList.removeFromFront();
-console.log(myList.head)
+myList.addToBack(99).addToBack(12)
 
 myList.printList();
