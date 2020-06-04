@@ -75,11 +75,40 @@ class SLList {
         this.head = this.head.next;
         return this;
     }
+
+// Contains. Challenge --> Do this recursively
+    contains(value) {
+    // return a boolean: if the value is in the list, return true, else return false
+        let runner = this.head;
+        if (runner.value === value){
+            return true;
+        }
+        if (runner.next === null){
+            return false;
+        }
+        else {
+            runner = runner.next;
+        }
+    // Set our runner to traverse through the list
+   
+        // check if the runner's value matches the value we're searching for
+        
+        // move it along
+      
+    // if we've reached the end of our list and NOT found the value, then it must not be in here
+    
 }
 
+// same as above but recursively
+rContains(value, runner = this.head) {
+    // check for empty list or end of list because of recursion
+    
+    // check if runner's value is the value we're looking for
+   
+    // make recursive call and return it so as soon as the end of the call stack finishes it shoots back up the chain
+}
 
 var myList = new SLList();
-
 myList.head = new SLNode(5);
 myList.head.next = new SLNode(6);
 myList.head.next.next = new SLNode(7);
@@ -89,6 +118,7 @@ myList.addToFront(25).addToFront(0);
 myList.addToFront(333);
 console.log(myList.head)
 myList.removeFromFront();
-console.log(myList.head)
+console.log(myList.head);
+console.log(myList.contains(333));
 
 myList.printList();
