@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/style.css">
+
+</head>
+<style>
+    * {
+        border: 1px black;
+    }
+</style>
+<body>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="/">Registered</a> 
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="projects">Projects <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col"></div>
+    </div>
+    <div class="row " style="height: 100px;">
+        <div class="col"></div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <h1>Submitted Info</h1>
+        </div>
+        <div class="col"></div>
+
+    </div>
+    <div class="row " style="height: 100px;">
+      <DIV class="col-2"></DIV>
+      <DIV class="col">
+          <p>Name:</p>
+          <p>Dojo:</p>
+          <p>Favorite Language:</p>
+          <p>Message:</p>
+      </DIV>
+      <DIV class="col">
+          <p>@ViewBag.Name</p>
+          <p>@ViewBag.Dojo</p>
+          <p>@ViewBag.Lang</p>
+          <p>@ViewBag.Message</p>
+      </DIV>
+      <DIV class="col-2"></DIV>
+    </div>
+</body>
+</html>
