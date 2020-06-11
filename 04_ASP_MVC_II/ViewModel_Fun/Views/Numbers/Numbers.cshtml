@@ -1,0 +1,23 @@
+@using ViewModel_Fun.Models
+@model Numbers
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Here are some numbers!</h1>
+    <p> </p>
+    <p>
+        <ul>
+            @foreach(int number in Model.SetofNumbers)
+                {
+                    <li>
+                        @number
+                    </li>
+                }
+            
+        </ul>
+    </p>
+    
+</div>
