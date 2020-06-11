@@ -1,0 +1,23 @@
+@using DojoSurveyWithModels.Models
+@model User
+
+<p style="text-decoration-line: underline;">
+    Submitted
+</p>
+<div class="row">
+    <div class="col"></div>
+    <div class="col">
+        <p>Name:</p>
+        <p>Dojo:</p>
+        <p>Favorite Language:</p>
+        <p>Comment:
+        </p>
+    </div>
+    <div class="col">
+       <p> @Model.Name</p>
+       <p> @Model.Dojo</p>
+       <p> @Model.FavLanguage</p>
+       <p> @Model.Comment</p>
+    </div>
+    <div class="col"></div>
+</div>

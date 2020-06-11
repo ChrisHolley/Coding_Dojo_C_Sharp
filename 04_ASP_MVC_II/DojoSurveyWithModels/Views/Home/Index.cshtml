@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Dojo Survey Index";
+}
+
+<div class="text-center">
+    <h1 class="display-4"></h1>
+    <form action="surveyAdmission" method="POST">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <label for="Name">Your Name:</label>
+                <br>
+                <label for="DojoLoc">Dojo Location:</label>
+                <br>
+                <label for="FavLang">Favorite Language:</label>
+            </div>
+            <div class="col">
+                <input type="text" name="Name" id="">
+                <select id="loca" name="DojoLoc">
+                    <option value="Seattle">Seattle</option>
+                    <option value="Orange County">Orange County</option>
+                    <option value="Boise">Boise</option>
+                    <option value="Burbank">Burbank</option>
+                </select>
+                <br>
+                <select id="langs" name="FavLang">
+                    <option value="C#">C#</option>
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                </select>
+                
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="Comment">Comment(optional)</label>
+                <br>
+                <textarea name="Comment" id="" cols="90" rows="6"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
